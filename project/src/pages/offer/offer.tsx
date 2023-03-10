@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 // @flow
-export default function offer() {
+export default function Offer() {
   return (
     <div className="page">
       <div style={{display: 'none'}}>
