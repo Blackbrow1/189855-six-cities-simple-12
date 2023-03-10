@@ -1,0 +1,33 @@
+.not-found {
+  position: relative;
+  top: 50vh;
+  padding: 50px;
+  width: 1000px;
+  border: 2px solid #4481c3;;
+  border-radius: 12px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.not-found__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 64px;
+  color: #4481c3;
+}
+
+.non-found__desription {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 30px;
+  color: #383838;
+}
+
+.not-found__link {
+  font-size: 16px;
+  background: #4481c3;
+  color: white;
+  padding: 15px 35px;
+  display: inline-block;
+}
