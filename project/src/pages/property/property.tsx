@@ -1,7 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 // @flow
-export default function Offer() {
+import { Offer } from '../../types/offers';
+import {Review} from '../../types/reviews';
+
+type PropertyProps = {
+  offers: Offer[];
+  reviews: Review[];
+};
+
+export default function Property({offers, reviews}: PropertyProps) {
   return (
     <div className="page">
       <div style={{display: 'none'}}>
