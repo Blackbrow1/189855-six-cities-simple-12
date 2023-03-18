@@ -1,12 +1,14 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import Card from '../../components/card/card';
+import CardList from '../../components/card-list/card-list';
+import { Offer } from '../../types/offers';
 
 type mainProps = {
   numberOffers: number;
+  offers: Offer[];
 }
 
-function MainPage({numberOffers}: mainProps): JSX.Element {
+function MainPage({numberOffers, offers}: mainProps): JSX.Element {
   return (
     <>
       <header className="header">
@@ -94,13 +96,7 @@ function MainPage({numberOffers}: mainProps): JSX.Element {
                   <li className="places__option" tabIndex={0}>Top rated first</li>
                 </ul>
               </form>
-              <div className="cities__places-list places__list tabs__content">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-              </div>
+              <CardList offers={offers} />
             </section>
             <div className="cities__right-section">
               <section className="cities__map map"></section>
